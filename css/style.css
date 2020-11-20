@@ -350,10 +350,6 @@ img{
 }
 #header .nav-list ul span.text-white p{
   font-family: 'Roboto', sans-serif !important;
-  animation: 3s ease forwards;
-  animation-delay: 1s;
-  animation-name: ul_reveal; 
-  opacity: 0;
   margin-top: 3rem;
   text-align: center;
   display: flex;
@@ -376,9 +372,6 @@ img{
   left: -50px;
   top: 50%;
   transform: translate(-50%,-50%);
-  animation: 3s ease forwards;
-  animation-name: ul_reveal; 
-  opacity: 0;
   transition: .3s ease left;
 }
 #header .nav-list ul a{
@@ -388,9 +381,6 @@ img{
   display: block;
   transition: .2s ease color;
   z-index: 2;
-  animation: 3s ease forwards;
-  animation-name: ul_reveal;  
-  opacity: 0;
   letter-spacing: .2rem;
 }
 /* #header .nav-list ul a::before{
@@ -415,24 +405,6 @@ img{
 #header .nav-list ul li.current:hover a::after{
   left: -35px;
 } 
-#header .nav-list ul li.d-2 a{ 
-  animation-delay: .2s;
-}
-#header .nav-list ul li.d-3 a{ 
-  animation-delay: .5s;
-}
-#header .nav-list ul li.d-4 a{ 
-  animation-delay: .8s;
-}
-#header .nav-list ul span{
-  opacity: 0;
-  transition: 3s opacity ease;
-}
-#header .nav-list ul span{
-  animation: 3s ease forwards;
-  animation-delay: 1s;
-  animation-name: ul_reveal;   
-}
 #header .nav-list ul.active span.text-white p{
   font-family: 'Roboto', sans-serif !important;
   margin-top: 3rem;
@@ -1339,6 +1311,7 @@ img{
   display: block;
   animation-delay: .3s;
   animation-name: ul_reveal; 
+  opacity: 1;
 }
 #footer footer  .move-up{
   position: fixed;
@@ -2256,7 +2229,9 @@ img{
     width: 80px;
     height: 50px;
   }
-  
+  .scroll{
+    display: none;
+  }
   /* service */
   #service  .service-content{
     display:grid !important;
@@ -2421,8 +2396,14 @@ img{
   
 }  
 }
-@media only screen and (max-height:320px){
-       
+@media only screen and (max-height:500px){
+  .fnc-nav__control {
+    display: none;
+  }
+  #hero .hero .hero-content{
+    width: 95%;
+    top: 4rem;
+  }        
   }
  /* media queries end */
 /* loader */
