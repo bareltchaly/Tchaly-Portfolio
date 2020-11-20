@@ -381,7 +381,7 @@ img{
   opacity: 0;
   transition: .3s ease left;
 }
-#header .nav-list ul a{
+#header .nav-list ul.active a{
   font-size: 3.5rem;
   color: var(--light);
   font-weight: 700;
@@ -415,17 +415,14 @@ img{
 #header .nav-list ul li.current:hover a::after{
   left: -35px;
 } 
-#header .nav-list ul li.d-2 a{ 
+#header .nav-list ul.active li.d-2 a{ 
   animation-delay: .2s;
-  z-index: 2;
 }
 #header .nav-list ul.active li.d-3 a{ 
   animation-delay: .5s;
-  z-index: 3;
 }
 #header .nav-list ul.active li.d-4 a{ 
   animation-delay: .8s;
-  z-index: 2;
 }
 #header .nav-list ul span{
   opacity: 0;
