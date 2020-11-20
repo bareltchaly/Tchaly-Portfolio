@@ -2351,6 +2351,10 @@ img{
  /* 460px viewport end */
 @media only screen and (max-width:320px){
   /* global */
+  #service  .service-content{
+    display: flex;
+    flex-direction: column;
+  }
   .text-large{
     font-size: 2.5rem;
   }
@@ -2392,7 +2396,10 @@ img{
     width: 65px;
     height: 40px;
   }
-  
+  #hero .hero .hero-content{
+    width: 88%;
+    top: 20%;
+  } 
   #hero .hero-content .hero-text h1{
     font-size: 1.7rem;
     margin: .5rem 0;
@@ -2411,9 +2418,12 @@ img{
   #hero .hero-content .h-btn{
     font-size: 1rem;
   }
+  
 }  
 }
-
+@media only screen and (max-height:320px){
+       
+  }
  /* media queries end */
 /* loader */
  .text-center{
