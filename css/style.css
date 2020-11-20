@@ -381,7 +381,7 @@ img{
   opacity: 0;
   transition: .3s ease left;
 }
-#header .nav-list ul.active a{
+#header .nav-list ul a{
   font-size: 3.5rem;
   color: var(--light);
   font-weight: 700;
@@ -415,20 +415,20 @@ img{
 #header .nav-list ul li.current:hover a::after{
   left: -35px;
 } 
-#header .nav-list ul.active li.d-2 a{ 
+#header .nav-list ul li.d-2 a{ 
   animation-delay: .2s;
 }
-#header .nav-list ul.active li.d-3 a{ 
+#header .nav-list ul li.d-3 a{ 
   animation-delay: .5s;
 }
-#header .nav-list ul.active li.d-4 a{ 
+#header .nav-list ul li.d-4 a{ 
   animation-delay: .8s;
 }
 #header .nav-list ul span{
   opacity: 0;
   transition: 3s opacity ease;
 }
-#header .nav-list ul.active span{
+#header .nav-list ul span{
   animation: 3s ease forwards;
   animation-delay: 1s;
   animation-name: ul_reveal;   
@@ -1308,7 +1308,7 @@ img{
 .contact-fixed{
   position: fixed !important;
   left: 4%;
-  top: 89%;
+  top: 83%;
   z-index: 99;
   display: flex;
   align-items: center;
@@ -1345,8 +1345,8 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;  
-  right: 9%;
-  top: 89%;
+  left: 4%;
+  top: 90%;
   z-index: 99;
   background: var(--grey);
   border-radius: 50%;
