@@ -1345,7 +1345,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;  
-  right: 7%;
+  right: 9%;
   top: 89%;
   z-index: 99;
   background: var(--grey);
