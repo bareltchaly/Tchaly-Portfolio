@@ -2259,8 +2259,8 @@ img{
   
   /* service */
   #service  .service-content{
-    grid-template-columns: 1fr;
-    
+    display:grid !important;
+    grid-template-columns: 1fr !important;    
   }
   /* project */
   #project .project-content {
