@@ -29,6 +29,13 @@ $(document).scroll(function () {
     var scroll = $(window).scrollTop();
     $move_up = $(' .move-up');
     $cont_fix = $('.contact-fixed');
+    $footer_top = $('#footer').offset().top - window.innerHeight;
+
+    if (scroll> $footer_top){
+        $cont_fix.css({'display':'none'})
+    } else{
+        $cont_fix.css({'display':'block'})
+    }
 
     if (scroll > 600) {
         $move_up.css({ 'opacity': '1' })
@@ -37,6 +44,7 @@ $(document).scroll(function () {
         $move_up.css({ 'opacity': '0' })
         $cont_fix.css({'top': '90%'})
     }
+    
     amount = (scroll * 0.0017)
     if (scroll > 200) {
         $('.hero').css({ "opacity": '1' - amount })
