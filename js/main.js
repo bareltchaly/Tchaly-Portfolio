@@ -271,8 +271,8 @@ $(document).ready(function () {
 
 var counted = 0;
 $(window).scroll(function () {
-
-    var oTop = $('#counter').offset().top - window.innerHeight;
+  $counter_h = $('#counter');
+    var oTop = $counter_h.offset().top - window.innerHeight;
     if (counted == 0 && $(window).scrollTop() > oTop) {
         $('.count').each(function () {
             var $this = $(this),
