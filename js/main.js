@@ -254,9 +254,7 @@ $(document).ready(function () {
     var $demoCont = document.querySelector(".hero");
 
 
-    document.querySelector(".js-activate-global-blending").addEventListener("click", function () {
-        document.querySelector(".example-slider").classList.toggle("m--global-blending-active");
-    });
+  
    
 
 
