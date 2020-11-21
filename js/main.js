@@ -27,12 +27,15 @@ $('.move-up').click(function () {
 
 $(document).scroll(function () {
     var scroll = $(window).scrollTop();
-    $move_up = $(' .move-up')
+    $move_up = $(' .move-up');
+    $cont_fix = $('.contact-fixed');
 
     if (scroll > 600) {
         $move_up.css({ 'opacity': '1' })
+        $cont_fix.css({'top':'83%'})
     } else {
         $move_up.css({ 'opacity': '0' })
+        $cont_fix.css({'top': '90%'})
     }
     amount = (scroll * 0.0017)
     if (scroll > 200) {
