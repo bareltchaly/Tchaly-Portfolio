@@ -133,6 +133,7 @@ img{
 }
 .container{
   margin: 2rem 3rem;
+  max-width: 1380px;
 }
 /* end  global class */
 /* header section */
@@ -1117,7 +1118,7 @@ img{
 }
 
 #project .project-content .project-item .project-img{
-  height: 600px;
+  height: 900px;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
@@ -2005,7 +2006,146 @@ img{
 
  /* keyframes end */
  /* media queries */
- 
+ /* 1440 px viewport */
+@media only screen and (min-width:1440px){
+   /* global class */
+   .container{
+    margin: 3rem 5rem;
+  }
+  .text-large{
+    font-size: 6rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  span.top{
+    font-size: 1.7rem;
+  }
+  .btn-5 {
+    width: 160px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  /* header  */
+   /* header  */
+   #header .header .nav-bar .brand .circle{
+    width: 70px;
+    height: 70px;
+  }
+  #header .header .nav-bar .brand .circle i{
+    font-size:7rem;
+  }
+  #header .header .nav-bar .brand .circle span{
+    font-size: 2rem;
+  }
+  #header .header .nav-bar .brand .brand-name h1{
+    font-size: 2.8rem;
+  }
+  #header .header .nav-bar .brand .brand-name span.sub{
+    font-size: 1.5rem;
+  }
+  #header .nav-bar .hamburger {
+    width: 70px;
+    height: 70px;
+    right: 2rem;
+  }
+  #header .nav-bar .nav-list .hamburger span {
+    height: 9px;
+    width: 100%;
+  }
+  #header .nav-bar .nav-list .hamburger:hover span:nth-child(1){
+    top: -2px;
+  }
+  #header .nav-bar .nav-list .hamburger span:nth-child(2){
+    top: 20px;
+  }
+  #header .nav-bar .nav-list .hamburger span:nth-child(3){
+    top: 40px;
+  }
+  #header .nav-bar .nav-list .hamburger:hover span:nth-child(3){
+    top: 42px;
+  }
+  #header .nav-bar .nav-list .hamburger.active span:nth-child(1){
+    top: 18px;
+  }
+  #header .nav-bar .nav-list .hamburger.active span:nth-child(2){
+    left: -60px;
+  }
+  #header .nav-bar .nav-list .hamburger.active span:nth-child(3){
+    top: 18px;
+  }
+  #header .nav-list ul a{
+    font-size: 5.5rem;
+  }
+  #header .nav-list ul span{
+    font-size: 1.8rem;  
+    margin-bottom: 2rem;
+  }
+  #header .nav-list ul.active span.text-white p{
+    margin-top: 8rem;
+  }
+  #header .header .nav-bar .brand{
+    top: 5rem;
+    left: 5rem;
+  }
+  #header .header .nav-bar .hamburger{
+    top: 4rem;
+    right: 5rem;
+  }
+  .fnc-slide__content {
+    left: 50%;
+    top: 50%;
+  }
+  .fnc-slide__heading-line {
+    font-size: 7.5rem;
+  }
+  
+  #hero .hero-content .hero-text h1{
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+  #hero .hero-content .hero-text p{
+    color: var(--dark);
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  #hero .hero-content .h-btn{
+     margin: 1rem 0;
+     font-size: 2rem;
+  }
+  #hero .hero-content span.b_{
+    font-size: 1.9rem;
+  }
+  /* hero */
+  /* service seciton */
+  #service  .service-content .card .face{
+    width: 400px;
+    height: 300px;
+  }
+  #service  .service-content .card .face.face1{
+    transform: translateY(150px);
+  }
+  #service  .service-content .card .face.face1 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #service  .service-content .card .face.face1 .content h3{
+    font-size: 2em;
+  }
+  #service  .service-content .card .face.face2{
+    transform: translateY(-150px);
+  }
+  #service  .service-content .card .face.face2 .custom-btn{
+    margin-top: 2rem;
+  }
+/* service section end */
+/* footer */
+  #footer .f-item.pr{
+    font-size: 1.4rem;
+  }
+}
 
 /* 960 px viewport */
 @media only screen and (max-width:960px){
@@ -2013,6 +2153,7 @@ img{
   .container{
     margin: 1rem 2rem;
   }
+  
  
   /* global class end */
   /* header  */

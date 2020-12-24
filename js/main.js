@@ -27,7 +27,7 @@ $('.move-up').click(function () {
 
 $(document).scroll(function () {
     var scroll = $(window).scrollTop();
-    $move_up = $(' .move-up');
+    $move_up = $('.move-up');
     $cont_fix = $('.contact-fixed');
     $footer_top = $('#footer').offset().top - window.innerHeight;
 
