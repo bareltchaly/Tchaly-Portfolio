@@ -131,9 +131,6 @@ img{
   width: 100%;
   height: 100%;
 }
-main{
- 
-}
 .container{
   margin: 2rem 3rem;
 }
@@ -356,6 +353,7 @@ main{
   animation: 3s ease forwards;
   animation-delay: 1s;
   animation-name: ul_reveal; 
+  opacity: 0;
   margin-top: 3rem;
   text-align: center;
   display: flex;
@@ -380,6 +378,7 @@ main{
   transform: translate(-50%,-50%);
   animation: 3s ease forwards;
   animation-name: ul_reveal; 
+  opacity: 0;
   transition: .3s ease left;
 }
 #header .nav-list ul a{
@@ -391,6 +390,7 @@ main{
   z-index: 2;
   animation: 3s ease forwards;
   animation-name: ul_reveal;  
+  opacity: 0;
   letter-spacing: .2rem;
 }
 /* #header .nav-list ul a::before{
@@ -417,17 +417,21 @@ main{
 } 
 #header .nav-list ul li.d-2 a{ 
   animation-delay: .2s;
+  z-index: 2;
 }
-#header .nav-list ul li.d-3 a{ 
+#header .nav-list ul.active li.d-3 a{ 
   animation-delay: .5s;
+  z-index: 3;
 }
-#header .nav-list ul li.d-4 a{ 
+#header .nav-list ul.active li.d-4 a{ 
   animation-delay: .8s;
+  z-index: 2;
 }
 #header .nav-list ul span{
+  opacity: 0;
   transition: 3s opacity ease;
 }
-#header .nav-list ul span{
+#header .nav-list ul.active span{
   animation: 3s ease forwards;
   animation-delay: 1s;
   animation-name: ul_reveal;   
@@ -874,17 +878,17 @@ main{
  
   .example-slider .fnc-slide-1 .fnc-slide__inner,
   .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-2 .fnc-slide__inner,
   .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-3 .fnc-slide__inner,
   .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-1 .fnc-slide__inner:before,
@@ -909,7 +913,7 @@ main{
   }
   .example-slider .fnc-slide-4 .fnc-slide__inner,
   .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide__heading,
@@ -1120,6 +1124,7 @@ main{
 }
 
 #project .project-content .project-item .project-img{
+  height: 600px;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
@@ -1129,6 +1134,7 @@ main{
 }
 .overlay {
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   display: flex;
@@ -1305,8 +1311,8 @@ main{
 .contact-fixed{
   position: fixed !important;
   left: 4%;
-  top: 90%;
-  z-index: 999;
+  top: 89%;
+  z-index: 99;
   display: flex;
   align-items: center;
   background: var(--grey);
@@ -1342,8 +1348,8 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;  
-  left: 4%;
-  top: 90%;
+  right: 7%;
+  top: 89%;
   z-index: 99;
   background: var(--grey);
   border-radius: 50%;
@@ -2006,146 +2012,7 @@ main{
 
  /* keyframes end */
  /* media queries */
- /* 1440 px viewport */
-@media only screen and (min-width:1440px){
-   /* global class */
-   .container{
-    margin: 3rem 5rem;
-  }
-  .text-large{
-    font-size: 6rem;
-  }
-  p{
-    font-size: 1.5rem;
-  }
-  span.top{
-    font-size: 1.7rem;
-  }
-  .btn-5 {
-    width: 160px;
-    height: 40px;
-    font-size: 1.5rem;
-  }
-  /* header  */
-   /* header  */
-   #header .header .nav-bar .brand .circle{
-    width: 70px;
-    height: 70px;
-  }
-  #header .header .nav-bar .brand .circle i{
-    font-size:7rem;
-  }
-  #header .header .nav-bar .brand .circle span{
-    font-size: 2rem;
-  }
-  #header .header .nav-bar .brand .brand-name h1{
-    font-size: 2.8rem;
-  }
-  #header .header .nav-bar .brand .brand-name span.sub{
-    font-size: 1.5rem;
-  }
-  #header .nav-bar .hamburger {
-    width: 70px;
-    height: 70px;
-    right: 2rem;
-  }
-  #header .nav-bar .nav-list .hamburger span {
-    height: 9px;
-    width: 100%;
-  }
-  #header .nav-bar .nav-list .hamburger:hover span:nth-child(1){
-    top: -2px;
-  }
-  #header .nav-bar .nav-list .hamburger span:nth-child(2){
-    top: 20px;
-  }
-  #header .nav-bar .nav-list .hamburger span:nth-child(3){
-    top: 40px;
-  }
-  #header .nav-bar .nav-list .hamburger:hover span:nth-child(3){
-    top: 42px;
-  }
-  #header .nav-bar .nav-list .hamburger.active span:nth-child(1){
-    top: 18px;
-  }
-  #header .nav-bar .nav-list .hamburger.active span:nth-child(2){
-    left: -60px;
-  }
-  #header .nav-bar .nav-list .hamburger.active span:nth-child(3){
-    top: 18px;
-  }
-  #header .nav-list ul a{
-    font-size: 5.5rem;
-  }
-  #header .nav-list ul span{
-    font-size: 1.8rem;  
-    margin-bottom: 2rem;
-  }
-  #header .nav-list ul.active span.text-white p{
-    margin-top: 8rem;
-  }
-  #header .header .nav-bar .brand{
-    top: 5rem;
-    left: 5rem;
-  }
-  #header .header .nav-bar .hamburger{
-    top: 4rem;
-    right: 5rem;
-  }
-  .fnc-slide__content {
-    left: 50%;
-    top: 50%;
-  }
-  .fnc-slide__heading-line {
-    font-size: 7.5rem;
-  }
-  
-  #hero .hero-content .hero-text h1{
-    font-size: 4rem;
-    margin: 1rem 0;
-  }
-  #hero .hero-content .hero-text p{
-    color: var(--dark);
-    font-size: 2rem;
-    margin: 1rem 0;
-  }
-  #hero .hero-content .h-btn{
-     margin: 1rem 0;
-     font-size: 2rem;
-  }
-  #hero .hero-content span.b_{
-    font-size: 1.9rem;
-  }
-  /* hero */
-  /* service seciton */
-  #service  .service-content .card .face{
-    width: 400px;
-    height: 300px;
-  }
-  #service  .service-content .card .face.face1{
-    transform: translateY(150px);
-  }
-  #service  .service-content .card .face.face1 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #service  .service-content .card .face.face1 .content h3{
-    font-size: 2em;
-  }
-  #service  .service-content .card .face.face2{
-    transform: translateY(-150px);
-  }
-  #service  .service-content .card .face.face2 .custom-btn{
-    margin-top: 2rem;
-  }
-/* service section end */
-/* footer */
-  #footer .f-item.pr{
-    font-size: 1.4rem;
-  }
-}
+ 
 
 /* 960 px viewport */
 @media only screen and (max-width:960px){
@@ -2153,7 +2020,6 @@ main{
   .container{
     margin: 1rem 2rem;
   }
-  
  
   /* global class end */
   /* header  */
@@ -2393,13 +2259,11 @@ main{
     width: 80px;
     height: 50px;
   }
-  .scroll{
-    display: none;
-  }
+  
   /* service */
   #service  .service-content{
-    display:grid !important;
-    grid-template-columns: 1fr !important;    
+    grid-template-columns: 1fr;
+    
   }
   /* project */
   #project .project-content {
@@ -2490,10 +2354,6 @@ main{
  /* 460px viewport end */
 @media only screen and (max-width:320px){
   /* global */
-  #service  .service-content{
-    display: flex;
-    flex-direction: column;
-  }
   .text-large{
     font-size: 2.5rem;
   }
@@ -2535,10 +2395,7 @@ main{
     width: 65px;
     height: 40px;
   }
-  #hero .hero .hero-content{
-    width: 88%;
-    top: 20%;
-  } 
+  
   #hero .hero-content .hero-text h1{
     font-size: 1.7rem;
     margin: .5rem 0;
@@ -2557,30 +2414,9 @@ main{
   #hero .hero-content .h-btn{
     font-size: 1rem;
   }
-  
 }  
 }
-@media only screen and (max-height:500px){
-  #header .nav-list ul a{
-    font-size: 1.7rem;
-  }
-  #header .nav-list ul.active span.text-white p{
-    display: none;
-  }
-  .fnc-nav__control {
-    display: none;
-  }
-  #hero .hero .hero-content{
-    width: 95%;
-    top: 4rem;
-  }    
-  .contact-fixed{
-    display: none;
-  } 
-  #footer footer  .move-up{
-    display: none;
-  } 
-  }
+
  /* media queries end */
 /* loader */
  .text-center{
@@ -2594,15 +2430,15 @@ main{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   left: 0;
   top: 0;
-  width: 100vw;
-  z-index: 9999;
+  width: 100%;
+  z-index: 9000;
   background-color:  rgb(3, 7, 28);  
   }
 
