@@ -390,7 +390,6 @@ img{
   z-index: 2;
   animation: 3s ease forwards;
   animation-name: ul_reveal;   
-  opacity: 0;
   letter-spacing: .2rem;
   
 }
