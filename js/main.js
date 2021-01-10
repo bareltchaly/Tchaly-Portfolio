@@ -323,3 +323,4 @@ $('.slider-wrapper .owl-carousel').owlCarousel({
     nav: false,
     dots: false
 });
+

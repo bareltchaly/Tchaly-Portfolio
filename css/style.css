@@ -389,7 +389,7 @@ img{
   transition: .2s ease color;
   z-index: 2;
   animation: 3s ease forwards;
-  animation-name: ul_reveal;  
+  animation-name: ul_reveal;   
   opacity: 0;
   letter-spacing: .2rem;
 }
@@ -1311,7 +1311,7 @@ img{
 .contact-fixed{
   position: fixed !important;
   left: 4%;
-  top: 89%;
+  bottom: 1.5rem;
   z-index: 99;
   display: flex;
   align-items: center;
@@ -2244,6 +2244,12 @@ img{
     display: none;
     /* left: 40%;
     top: 15%; */
+  }
+  .fnc-nav__control{
+    display: none;
+  }
+  .scroll{
+    display: none;
   }
  
 /* ------------------------- 
