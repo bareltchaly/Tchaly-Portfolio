@@ -392,6 +392,10 @@ img{
   animation-name: ul_reveal;   
   opacity: 0;
   letter-spacing: .2rem;
+  
+}
+#header .nav-list ul.active a{
+  opacity: 1;
 }
 /* #header .nav-list ul a::before{
   content: attr(data-after);
