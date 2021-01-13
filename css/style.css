@@ -353,7 +353,7 @@ img{
   animation: 3s ease forwards;
   animation-delay: 1s;
   animation-name: ul_reveal; 
-  opacity: 0;
+  opacity: 1;
   margin-top: 3rem;
   text-align: center;
   display: flex;
