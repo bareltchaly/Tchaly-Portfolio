@@ -132,7 +132,9 @@ img{
   height: 100%;
 }
 .container{
-  margin: 2rem 3rem;
+  margin: 2rem auto;
+  padding: 0 3rem;
+  max-width: 1500px;  
 }
 /* end  global class */
 /* header section */
@@ -165,7 +167,7 @@ img{
   transition: .5s ease-in-out;
   position: fixed;
   top: 3rem;
-  left: 3rem;
+  left: auto;
 }
 #header .header .nav-bar .brand .circle{
   width: 50px;
@@ -250,7 +252,7 @@ img{
   cursor: pointer;
   position: fixed;
   top: 3rem;
-  right: 3rem;
+  right: 2rem;
 }
 #header .nav-bar .nav-list .hamburger span {
   display: block;
@@ -353,7 +355,7 @@ img{
   animation: 3s ease forwards;
   animation-delay: 1s;
   animation-name: ul_reveal; 
-  opacity: 1;
+  opacity: 0;
   margin-top: 3rem;
   text-align: center;
   display: flex;
@@ -389,12 +391,9 @@ img{
   transition: .2s ease color;
   z-index: 2;
   animation: 3s ease forwards;
-  animation-name: ul_reveal;   
+  animation-name: ul_reveal;  
+  opacity: 0;
   letter-spacing: .2rem;
-  
-}
-#header .nav-list ul.active a{
-  opacity: 1;
 }
 /* #header .nav-list ul a::before{
   content: attr(data-after);
@@ -881,17 +880,17 @@ img{
  
   .example-slider .fnc-slide-1 .fnc-slide__inner,
   .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-2 .fnc-slide__inner,
   .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-3 .fnc-slide__inner,
   .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-1 .fnc-slide__inner:before,
@@ -916,7 +915,7 @@ img{
   }
   .example-slider .fnc-slide-4 .fnc-slide__inner,
   .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg.jpg");
+    background-image: url("../asset/__\ \(1\).jpg");
     background-position: center;
   }
   .example-slider .fnc-slide__heading,
@@ -1314,7 +1313,7 @@ img{
 .contact-fixed{
   position: fixed !important;
   left: 4%;
-  bottom: 1.5rem;
+  top: 89%;
   z-index: 99;
   display: flex;
   align-items: center;
@@ -2015,8 +2014,39 @@ img{
 
  /* keyframes end */
  /* media queries */
- 
-
+ /* 460px viewport end */
+ @media only screen and (min-width: 1500px){
+   /* header */
+  #header .header .nav-bar .brand{
+    left: 18%;
+  }
+  #header .nav-bar .hamburger {
+    right: 18%;
+  }
+   /* hero */
+   #hero .hero .hero-content{
+    max-width:600px;
+    width: 48%;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+  } 
+  .fnc-slide__content {
+    left: 48%;
+    top: 50%;
+  } 
+  .contact-fixed{
+    left: 18%;
+    top: 89%;    
+  }
+  #footer footer  .move-up{
+    right: 18%;
+    top: 89%;
+  }
+} 
 /* 960 px viewport */
 @media only screen and (max-width:960px){
   /* global class */
@@ -2247,12 +2277,6 @@ img{
     display: none;
     /* left: 40%;
     top: 15%; */
-  }
-  .fnc-nav__control{
-    display: none;
-  }
-  .scroll{
-    display: none;
   }
  
 /* ------------------------- 
