@@ -128,11 +128,13 @@ ul{
   list-style: none;
 }
 img{
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 .container{
-  margin: 2rem 3rem;
+  margin: 2rem auto;
+  padding: 0 3rem;
+  max-width: 1500px;  
 }
 /* end  global class */
 /* header section */
@@ -165,7 +167,7 @@ img{
   transition: .5s ease-in-out;
   position: fixed;
   top: 3rem;
-  left: 3rem;
+  left: auto;
 }
 #header .header .nav-bar .brand .circle{
   width: 50px;
@@ -250,7 +252,7 @@ img{
   cursor: pointer;
   position: fixed;
   top: 3rem;
-  right: 3rem;
+  right: 2rem;
 }
 #header .nav-bar .nav-list .hamburger span {
   display: block;
@@ -878,17 +880,17 @@ img{
  
   .example-slider .fnc-slide-1 .fnc-slide__inner,
   .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-    background-image: url("../asset/__\ \(1\).jpg");
+    background-image: url("../asset/hero_bg_.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-2 .fnc-slide__inner,
   .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-    background-image: url("../asset/__\ \(1\).jpg");
+    background-image: url("../asset/hero_bg_.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-3 .fnc-slide__inner,
   .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-    background-image: url("../asset/__\ \(1\).jpg");
+    background-image: url("../asset/hero_bg_.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-1 .fnc-slide__inner:before,
@@ -913,7 +915,7 @@ img{
   }
   .example-slider .fnc-slide-4 .fnc-slide__inner,
   .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url("../asset/__\ \(1\).jpg");
+    background-image: url("../asset/hero_bg_.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide__heading,
@@ -1045,7 +1047,7 @@ img{
 
 /* service seciton */
 #service .service{
-  padding: 2rem 0;
+  padding: 2rem 3rem;
 }
 #service  .service-content{
   position: relative;
@@ -1128,11 +1130,6 @@ img{
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
-}
-#project .project-content .project-item .project-img img{
-  transition: transform 0.4s ease-out;
-  max-width: 100%;
-  height: auto;
 }
 #project .project-content .project-item .project-img img{
   transition: transform 0.4s ease-out;
@@ -1455,7 +1452,7 @@ img{
         height: 100vh;
       }
        #abt-carousel  .slider-wrapper .item1{
-        background: url(../asset/about/s-3.jpg);
+        background: url(../asset/about/abt-img.jpeg);
         height: 80vh;  
         background-size: contain;
         background-position: center;
@@ -2017,8 +2014,39 @@ img{
 
  /* keyframes end */
  /* media queries */
- 
-
+ /* 460px viewport end */
+ @media only screen and (min-width: 1500px){
+   /* header */
+  #header .header .nav-bar .brand{
+    left: 18%;
+  }
+  #header .nav-bar .hamburger {
+    right: 18%;
+  }
+   /* hero */
+   #hero .hero .hero-content{
+    max-width:600px;
+    width: 48%;
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+  } 
+  .fnc-slide__content {
+    left: 48%;
+    top: 50%;
+  } 
+  .contact-fixed{
+    left: 18%;
+    top: 89%;    
+  }
+  #footer footer  .move-up{
+    right: 18%;
+    top: 89%;
+  }
+} 
 /* 960 px viewport */
 @media only screen and (max-width:960px){
   /* global class */

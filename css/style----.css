@@ -128,13 +128,11 @@ ul{
   list-style: none;
 }
 img{
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .container{
-  margin: 2rem auto;
-  padding: 0 3rem;
-  max-width: 1500px;  
+  margin: 2rem 3rem;
 }
 /* end  global class */
 /* header section */
@@ -167,7 +165,7 @@ img{
   transition: .5s ease-in-out;
   position: fixed;
   top: 3rem;
-  left: auto;
+  left: 3rem;
 }
 #header .header .nav-bar .brand .circle{
   width: 50px;
@@ -252,7 +250,7 @@ img{
   cursor: pointer;
   position: fixed;
   top: 3rem;
-  right: 2rem;
+  right: 3rem;
 }
 #header .nav-bar .nav-list .hamburger span {
   display: block;
@@ -1133,6 +1131,11 @@ img{
 }
 #project .project-content .project-item .project-img img{
   transition: transform 0.4s ease-out;
+  max-width: 100%;
+  height: auto;
+}
+#project .project-content .project-item .project-img img{
+  transition: transform 0.4s ease-out;
 }
 .overlay {
   width: 100%;
@@ -1452,7 +1455,7 @@ img{
         height: 100vh;
       }
        #abt-carousel  .slider-wrapper .item1{
-        background: url(../asset/about/abt-img.jpeg);
+        background: url(../asset/about/s-3.jpg);
         height: 80vh;  
         background-size: contain;
         background-position: center;
@@ -2014,39 +2017,8 @@ img{
 
  /* keyframes end */
  /* media queries */
- /* 460px viewport end */
- @media only screen and (min-width: 1500px){
-   /* header */
-  #header .header .nav-bar .brand{
-    left: 18%;
-  }
-  #header .nav-bar .hamburger {
-    right: 18%;
-  }
-   /* hero */
-   #hero .hero .hero-content{
-    max-width:600px;
-    width: 48%;
-    position: absolute;
-    z-index: 10;
-    top: 40%;
-    left: 20%;
-    display: flex;
-    flex-direction: column;
-  } 
-  .fnc-slide__content {
-    left: 48%;
-    top: 50%;
-  } 
-  .contact-fixed{
-    left: 18%;
-    top: 89%;    
-  }
-  #footer footer  .move-up{
-    right: 18%;
-    top: 89%;
-  }
-} 
+ 
+
 /* 960 px viewport */
 @media only screen and (max-width:960px){
   /* global class */
