@@ -1126,7 +1126,8 @@ img{
 }
 
 #project .project-content .project-item .project-img{
-  height: 600px;
+  max-height: 600px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   transition: all 0.5s;
@@ -2014,7 +2015,7 @@ img{
 
  /* keyframes end */
  /* media queries */
- /* 460px viewport end */
+ /* 1500px viewport end */
  @media only screen and (min-width: 1500px){
    /* header */
   #header .header .nav-bar .brand{
@@ -2047,11 +2048,21 @@ img{
     top: 89%;
   }
 } 
+/* ===============
+      contact.html=============== */
+      #iframe .iframe{
+        margin: 8rem auto;   
+      }
+      #iframe .iframe .i-title{
+        left: auto;
+      }
+/* 1500px viewport end */
 /* 960 px viewport */
 @media only screen and (max-width:960px){
   /* global class */
   .container{
     margin: 1rem 2rem;
+    padding: 0;
   }
  
   /* global class end */
@@ -2132,6 +2143,9 @@ img{
  
   /*hero end  */
   /* service */
+  #service .service{
+    padding: 2rem 0;
+  }
   #service  .service-content .card .face{
     width: 260px;
     height: 200px;
@@ -2187,6 +2201,9 @@ img{
   }
   .fnc-slide__heading-line {
     font-size: 4rem;
+  }
+  .fnc-nav__controls {
+    display: none;
   }
   #hero .hero-content .hero-text h1{
     font-size: 2.3rem;
@@ -2292,7 +2309,6 @@ img{
     width: 80px;
     height: 50px;
   }
-  
   /* service */
   #service  .service-content{
     grid-template-columns: 1fr;
