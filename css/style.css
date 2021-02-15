@@ -388,7 +388,6 @@ img{
   transition: .2s ease color;
   z-index: 2;
   animation: 3s ease forwards;
-  animation-name: ul_reveal;  
   letter-spacing: .2rem;
 }
 /* #header .nav-list ul a::before{
