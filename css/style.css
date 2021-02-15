@@ -354,8 +354,6 @@ img{
   font-family: 'Roboto', sans-serif !important;
   animation: 3s ease forwards;
   animation-delay: 1s;
-  animation-name: ul_reveal; 
-  opacity: 0;
   margin-top: 3rem;
   text-align: center;
   display: flex;
@@ -380,7 +378,6 @@ img{
   transform: translate(-50%,-50%);
   animation: 3s ease forwards;
   animation-name: ul_reveal; 
-  opacity: 0;
   transition: .3s ease left;
 }
 #header .nav-list ul a{
@@ -392,7 +389,6 @@ img{
   z-index: 2;
   animation: 3s ease forwards;
   animation-name: ul_reveal;  
-  opacity: 0;
   letter-spacing: .2rem;
 }
 /* #header .nav-list ul a::before{
