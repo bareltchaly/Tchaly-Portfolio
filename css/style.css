@@ -425,8 +425,6 @@ img{
   z-index: 2;
 }
 #header .nav-list ul span{
-  opacity: 0;
-  transition: 3s opacity ease;
 }
 #header .nav-list ul.active span{
   animation: 3s ease forwards;
