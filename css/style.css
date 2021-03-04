@@ -124,6 +124,7 @@ span.top{
 a{
   text-decoration: none;
 }
+
 ul{
   list-style: none;
 }
@@ -429,7 +430,6 @@ img{
 #header .nav-list ul.active span{
   animation: 3s ease forwards;
   animation-delay: 1s;
-  animation-name: ul_reveal;   
 }
 #header .nav-list ul.active span.text-white p{
   font-family: 'Roboto', sans-serif !important;
@@ -1286,6 +1286,10 @@ img{
 #footer .footer .footer-content .f-item.img img{
   height: 70px;
   width: 70px;
+  transition: .2s ease ;
+}
+#footer .footer .footer-content .f-item.img a:hover img{
+ transform: scale(1.1);
 }
 #footer .footer .footer-content .f-item a{
   color: var(--light);  
@@ -1475,7 +1479,7 @@ img{
       /* abt-carousel end */   
       /* experience */
       #abt-exp .experience{
-        padding: 2rem 0;
+        padding: 2rem 3rem;
       }
       #abt-exp .experience .exp-content{
         margin: 2rem 0;
@@ -1931,11 +1935,11 @@ img{
  /* ===============
       all_project.html=============== */
       #projects .projects{
-        padding: 8rem 0 ;
+        padding: 8rem 3rem ;
       }
       #projects .projects .project-content{
        margin-left: 20%;
-       padding: 2rem 0;
+       padding: 2rem;
       }
       #projects .projects .project-content p{
         font-size: 1.5rem;
