@@ -343,6 +343,8 @@ img{
   z-index: -1;
   transition: .3s ease right;
 }
+#header .nav-list ul > span{
+}
 #header .nav-list ul.active{
   right: 0;
 }
@@ -2177,7 +2179,9 @@ img{
             margin: 0;
           }      
           /* abt hero end */
-           
+          #abt-exp .experience{
+            padding: 2rem 0;
+          }
   /* ==========
            abt-html-media-960px  end*/         
 
@@ -2285,6 +2289,9 @@ img{
   #header .header .nav-bar .hamburger{
     top: 2rem;
     right: 1rem;
+  }
+  #header .nav-list ul li{
+    margin: .5rem;
   }
   /* hero */
   .fnc-slide__content {
