@@ -875,17 +875,17 @@ img{
  
   .example-slider .fnc-slide-1 .fnc-slide__inner,
   .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg_.jpg");
+    background-image: url("../asset/hero_bg.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-2 .fnc-slide__inner,
   .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg_.jpg");
+    background-image: url("../asset/hero_bg.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-3 .fnc-slide__inner,
   .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg_.jpg");
+    background-image: url("../asset/hero_bg.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide-1 .fnc-slide__inner:before,
@@ -910,7 +910,7 @@ img{
   }
   .example-slider .fnc-slide-4 .fnc-slide__inner,
   .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url("../asset/hero_bg_.jpg");
+    background-image: url("../asset/hero_bg.jpg");
     background-position: center;
   }
   .example-slider .fnc-slide__heading,
